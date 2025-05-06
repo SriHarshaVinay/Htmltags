@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Tags Tutorial</title>
+</head>
+<body style="margin:0; font-family:Arial, sans-serif;">
+
+  <div style="position: fixed; top: 0; width: 100%; background-color: black; color: white; padding: 10px; text-align: center; z-index: 1000;">
+    <h2 style="margin: 0;">HTML Tag Reference</h2>
+  </div>
+
+  <div style="position: fixed; top: 45px; width: 100%; background-color: #333; color: white; padding: 10px; text-align: center;">
+    <a href="index.html" style="margin: 0  20px; color: white; text-decoration: none;">Home</a>
+    <a href="basictags.html" style="margin: 0 20px; color: white; text-decoration: none;">Basic Tag</a>
+    <a href="textformatting.html" style="margin: 0 20px; color: white; text-decoration: none;">Formatting</a>
+    <a href="tables.html" style="margin: 0 20px; color: white; text-decoration: none;">Tables</a>
+    <a href="list.html" style="margin: 0 20px; color: white; text-decoration: none;">Lists</a>
+    <a href="form.html" style="margin: 0 20px; color: white; text-decoration: none;">Form</a>
+    <a href="images.html" style="margin: 0 20px; color: white; text-decoration: none;">Images</a>
+    <a href="hyperlink.html" style="margin: 0 20px; color: white; text-decoration: none;">Hyperlink</a>
+    <a href="headings.html" style="margin: 0 20px; color: white; text-decoration: none;">Headings</a>
+    <a href="comments.html" style="margin: 0 20px; color: white; text-decoration: none;">Comments</a>
+    <a href="audio_video.html" style="margin: 0 20px; color: white; text-decoration: none;">Audio & Video</a>
+    <a href="layouts.html" style="margin: 0 20px; color: white; text-decoration: none;">Layouts</a>
+  </div>
+
+  <div style="position: fixed;top:83px; /* Adjust to avoid overlapping with header */left: 0;width: 200px;height: 100%;background-color: #003366;padding-top: 20px;text-align: left;">
+    <a href="index.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Home</a>
+    <a href="basictags.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Basic Tag</a>
+    <a href="formatting.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Formatting</a>
+    <a href="tables.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Tables</a>
+    <a href="list.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Lists</a>
+    <a href="form.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Form</a>
+    <a href="images.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Images</a>
+    <a href="hyperlink.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Hyperlink</a>
+    <a href="headings.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Headings</a>
+    <a href="comments.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Comments</a>
+    <a href="audio_video.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Audio & Video</a> 
+    <a href="layouts.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Layouts</a>
+  </div>
+    <div id="media" style="padding: 15px; background-color: #f9f9f9; border-radius: 10px; margin-top: 60px;margin-left: 200px;">
+    <h3 style="border-bottom: 2px solid #ccc; padding-bottom: 5px;">HTML Frames, Audio, Video & Others</h3>
+  
+    <h4>1. &lt;iframe&gt; ... &lt;/iframe&gt;</h4>
+    <p>Used to embed another webpage within the current page.</p>
+    <iframe src="https://example.com" width="300" height="100"></iframe>
+  
+    <h4>2. &lt;audio&gt; ... &lt;/audio&gt;</h4>
+    <p>Used to embed sound content.</p>
+    <audio controls>
+      <source src="sample.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  
+    <h4>3. &lt;video&gt; ... &lt;/video&gt;</h4>
+    <p>Used to embed video content.</p>
+    <video width="320" height="240" controls>
+      <source src="movie.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  
+    <h4>4. &lt;source /&gt;</h4>
+    <p>Specifies multiple media resources for &lt;audio&gt; or &lt;video&gt;.</p>
+  
+    <h4>5. &lt;track /&gt;</h4>
+    <p>Used to specify text tracks for &lt;audio&gt; or &lt;video&gt; (like subtitles).</p>
+  
+    <h4>6. &lt;embed /&gt;</h4>
+    <p>Embeds external applications like PDFs or flash.</p>
+    <embed src="sample.pdf" width="300" height="200" type="application/pdf">
+  
+    <h4>7. &lt;object&gt; ... &lt;/object&gt;</h4>
+    <p>Defines an embedded object (like multimedia or plugin).</p>
+    <object data="sample.pdf" type="application/pdf" width="300" height="200"></object>
+  
+    <h4>8. &lt;param&gt;</h4>
+    <p>Defines parameters for plugins embedded using &lt;object&gt;.</p>
+    <object data="media.swf" type="application/x-shockwave-flash" width="300" height="200">
+      <param name="autoplay" value="true">
+    </object>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Tags Tutorial - Images</title>
+</head>
+<body style="margin:0; font-family:Arial, sans-serif;">
+
+  <div style="position: fixed; top: 0; width: 100%; background-color: black; color: white; padding: 10px; text-align: center; z-index: 1000;">
+    <h2 style="margin: 0;">HTML Tag Reference</h2>
+  </div>
+
+  <div style="position: fixed; top: 45px; width: 100%; background-color: #333; color: white; padding: 10px; text-align: center;">
+    <a href="index.html" style="margin: 0  20px; color: white; text-decoration: none;">Home</a>
+    <a href="basictags.html" style="margin: 0 20px; color: white; text-decoration: none;">Basic Tag</a>
+    <a href="textformatting.html" style="margin: 0 20px; color: white; text-decoration: none;">Formatting</a>
+    <a href="tables.html" style="margin: 0 20px; color: white; text-decoration: none;">Tables</a>
+    <a href="list.html" style="margin: 0 20px; color: white; text-decoration: none;">Lists</a>
+    <a href="form.html" style="margin: 0 20px; color: white; text-decoration: none;">Form</a>
+    <a href="images.html" style="margin: 0 20px; color: white; text-decoration: none;">Images</a>
+    <a href="hyperlink.html" style="margin: 0 20px; color: white; text-decoration: none;">Hyperlink</a>
+    <a href="headings.html" style="margin: 0 20px; color: white; text-decoration: none;">Headings</a>
+    <a href="comments.html" style="margin: 0 20px; color: white; text-decoration: none;">Comments</a>
+    <a href="audio_video.html" style="margin: 0 20px; color: white; text-decoration: none;">Audio & Video</a>
+    <a href="layouts.html" style="margin: 0 20px; color: white; text-decoration: none;">Layouts</a>
+  </div>
+
+  <div style="position: fixed;top:83px; /* Adjust to avoid overlapping with header */left: 0;width: 200px;height: 100%;background-color: #003366;padding-top: 20px;text-align: left;">
+    <a href="index.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Home</a>
+    <a href="basictags.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Basic Tag</a>
+    <a href="formatting.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Formatting</a>
+    <a href="tables.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Tables</a>
+    <a href="list.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Lists</a>
+    <a href="form.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Form</a>
+    <a href="images.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Images</a>
+    <a href="hyperlink.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Hyperlink</a>
+    <a href="headings.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Headings</a>
+    <a href="comments.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Comments</a>
+    <a href="audio_video.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Audio & Video</a>   
+    <a href="layouts.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Layouts</a>
+  </div>
+
+  <div style="margin-top: 60px; margin-left: 200px; padding: 20px; background-color: #f9f9f9; border-radius: 10px;">
+    <h3 style="border-bottom: 2px solid #ccc; padding-bottom: 5px;">HTML Images</h3>
+
+    <h4>&lt;img /&gt;</h4>
+    <p>Displays an image.</p>
+    <img src="https://via.placeholder.com/150" alt="Sample Image" style="border:1px solid #ccc;"><br><br>
+
+    <h4>&lt;map&gt; and &lt;area /&gt;</h4>
+    <p>Defines an image map with clickable areas.</p>
+    <img src="https://via.placeholder.com/300x100" usemap="#samplemap" alt="Image Map" style="border:1px solid #ccc;">
+    <map name="samplemap">
+      <area shape="rect" coords="34,44,270,80" href="https://www.example.com" alt="Example Link">
+    </map><br><br>
+
+    <h4>&lt;picture&gt;</h4>
+    <p>Used for multiple image sources depending on screen or device.</p>
+    <picture>
+      <source media="(min-width: 650px)" srcset="https://via.placeholder.com/300x100">
+      <img src="https://via.placeholder.com/150" alt="Responsive Image" style="border:1px solid #ccc;">
+    </picture><br><br>
+
+    <h4>&lt;figure&gt; and &lt;figcaption&gt;</h4>
+    <p>Used to group media content and a caption.</p>
+    <figure>
+      <img src="https://via.placeholder.com/200x100" alt="Diagram" style="border:1px solid #ccc;">
+      <figcaption>Figure 1: Sample Diagram</figcaption>
+    </figure><br>
+
+    <h4>&lt;canvas&gt;</h4>
+    <p>Used for drawing graphics via JavaScript.</p>
+    <canvas id="myCanvas" width="150" height="100" style="border:1px solid #ccc;"></canvas>
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.fillStyle = "#FF0000";
+      ctx.fillRect(20, 20, 100, 50);
+    </script><br><br>
+
+    <h4>&lt;svg&gt;</h4>
+    <p>Defines SVG (Scalable Vector Graphics) content.</p>
+    <svg width="100" height="100">
+      <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Tags Tutorial</title>
+</head>
+<body style="margin:0; font-family:Arial, sans-serif;">
+
+  <div style="position: fixed; top: 0; width: 100%; background-color: black; color: white; padding: 10px; text-align: center; z-index: 1000;">
+    <h2 style="margin: 0;">HTML Tag Reference</h2>
+  </div>
+
+  <div style="position: fixed; top: 45px; width: 100%; background-color: #333; color: white; padding: 10px; text-align: center;">
+    <a href="index.html" style="margin: 0  20px; color: white; text-decoration: none;">Home</a>
+    <a href="basictags.html" style="margin: 0 20px; color: white; text-decoration: none;">Basic Tag</a>
+    <a href="textformatting.html" style="margin: 0 20px; color: white; text-decoration: none;">Formatting</a>
+    <a href="tables.html" style="margin: 0 20px; color: white; text-decoration: none;">Tables</a>
+    <a href="list.html" style="margin: 0 20px; color: white; text-decoration: none;">Lists</a>
+    <a href="form.html" style="margin: 0 20px; color: white; text-decoration: none;">Form</a>
+    <a href="images.html" style="margin: 0 20px; color: white; text-decoration: none;">Images</a>
+    <a href="hyperlink.html" style="margin: 0 20px; color: white; text-decoration: none;">Hyperlink</a>
+    <a href="headings.html" style="margin: 0 20px; color: white; text-decoration: none;">Headings</a>
+    <a href="comments.html" style="margin: 0 20px; color: white; text-decoration: none;">Comments</a>
+    <a href="audio_video.html" style="margin: 0 20px; color: white; text-decoration: none;">Audio & Video</a>
+    <a href="layouts.html" style="margin: 0 20px; color: white; text-decoration: none;">Layouts</a>
+  </div>
+
+  <div style="position: fixed;top:83px; /* Adjust to avoid overlapping with header */left: 0;width: 200px;height: 100%;background-color: #003366;padding-top: 20px;text-align: left;">
+    <a href="index.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Home</a>
+    <a href="basictags.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Basic Tag</a>
+    <a href="formatting.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Formatting</a>
+    <a href="tables.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Tables</a>
+    <a href="list.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Lists</a>
+    <a href="form.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Form</a>
+    <a href="images.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Images</a>
+    <a href="hyperlink.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Hyperlink</a>
+    <a href="headings.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Headings</a>
+    <a href="comments.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Comments</a>
+    <a href="audio_video.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Audio & Video</a>
+    <a href="layouts.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Layouts</a>
+  </div>
+
+  <div style="margin-top: 60px; margin-left: 200px; padding: 20px; background-color: #f9f9f9; border-radius: 10px;">
+
+    <h3 style="border-bottom: 2px solid #ccc; padding-bottom: 5px;">HTML Form Tags</h3>
+
+    <h4>1. &lt;form&gt; ... &lt;/form&gt;</h4>
+    <p>Creates an HTML form for user input.</p>
+    <form>
+      <input type="text" placeholder="Name">
+    </form>
+
+    <h4>2. &lt;input /&gt;</h4>
+    <p>Defines an input field.</p>
+    <input type="text" placeholder="Input Field">
+
+    <h4>3. &lt;label&gt; ... &lt;/label&gt;</h4>
+    <p>Defines a label for an input element.</p>
+    <label for="name">Name:</label>
+    <input type="text" id="name">
+
+    <h4>4. &lt;button&gt; ... &lt;/button&gt;</h4>
+    <p>Creates a clickable button.</p>
+    <button type="submit">Submit</button>
+
+    <h4>5. &lt;textarea&gt; ... &lt;/textarea&gt;</h4>
+    <p>Multiline text input.</p>
+    <textarea rows="4" cols="30">Your message here...</textarea>
+
+    <h4>6. &lt;select&gt; ... &lt;/select&gt;</h4>
+    <p>Dropdown list.</p>
+    <select>
+      <option>Option 1</option>
+      <option>Option 2</option>
+    </select>
+
+    <h4>7. &lt;option&gt; ... &lt;/option&gt;</h4>
+    <p>Defines items in a dropdown list.</p>
+
+    <h4>8. &lt;optgroup&gt; ... &lt;/optgroup&gt;</h4>
+    <p>Groups related options in a dropdown.</p>
+    <select>
+      <optgroup label="Group 1">
+        <option>Item 1</option>
+        <option>Item 2</option>
+      </optgroup>
+    </select>
+
+    <h4>9. &lt;fieldset&gt; ... &lt;/fieldset&gt;</h4>
+    <p>Groups related form fields.</p>
+    <fieldset>
+      <legend>Login</legend>
+      <input type="text" placeholder="Username">
+    </fieldset>
+
+    <h4>10. &lt;legend&gt; ... &lt;/legend&gt;</h4>
+    <p>Defines a caption for the &lt;fieldset&gt;.</p>
+
+    <h4>11. &lt;datalist&gt; ... &lt;/datalist&gt;</h4>
+    <p>Provides a list of pre-defined options.</p>
+    <input list="browsers">
+    <datalist id="browsers">
+      <option value="Chrome">
+      <option value="Firefox">
+      <option value="Safari">
+    </datalist>
+
+    <h4>12. &lt;output&gt; ... &lt;/output&gt;</h4>
+    <p>Displays the result of a calculation.</p>
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="range" id="a" value="50"> +
+      <input type="number" id="b" value="50"> =
+      <output name="result" for="a b">100</output>
+    </form>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Tables Tags</title>
+</head>
+<body style="margin:0; font-family:Arial, sans-serif;">
+
+  <div style="position: fixed; top: 0; width: 100%; background-color: black; color: white; padding: 10px; text-align: center; z-index: 1000;">
+    <h2 style="margin: 0;">HTML Tag Reference</h2>
+  </div>
+
+  <div style="position: fixed; top: 45px; width: 100%; background-color: #333; color: white; padding: 10px; text-align: center;">
+    <a href="index.html" style="margin: 0  20px; color: white; text-decoration: none;">Home</a>
+    <a href="basictags.html" style="margin: 0 20px; color: white; text-decoration: none;">Basic Tag</a>
+    <a href="textformatting.html" style="margin: 0 20px; color: white; text-decoration: none;">Formatting</a>
+    <a href="tables.html" style="margin: 0 20px; color: white; text-decoration: none;">Tables</a>
+    <a href="list.html" style="margin: 0 20px; color: white; text-decoration: none;">Lists</a>
+    <a href="form.html" style="margin: 0 20px; color: white; text-decoration: none;">Form</a>
+    <a href="images.html" style="margin: 0 20px; color: white; text-decoration: none;">Images</a>
+    <a href="hyperlink.html" style="margin: 0 20px; color: white; text-decoration: none;">Hyperlink</a>
+    <a href="headings.html" style="margin: 0 20px; color: white; text-decoration: none;">Headings</a>
+    <a href="comments.html" style="margin: 0 20px; color: white; text-decoration: none;">Comments</a>
+    <a href="audio_video.html" style="margin: 0 20px; color: white; text-decoration: none;">Audio & Video</a>
+    <a href="layouts.html" style="margin: 0 20px; color: white; text-decoration: none;">Layouts</a>
+  </div>
+
+  <div style="position: fixed;top:83px; /* Adjust to avoid overlapping with header */left: 0;width: 200px;height: 100%;background-color: #003366;padding-top: 20px;text-align: left;">
+    <a href="index.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Home</a>
+    <a href="basictags.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Basic Tag</a>
+    <a href="formatting.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Formatting</a>
+    <a href="tables.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Tables</a>
+    <a href="list.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Lists</a>
+    <a href="form.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Form</a>
+    <a href="images.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Images</a>
+    <a href="hyperlink.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Hyperlink</a>
+    <a href="headings.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Headings</a>
+    <a href="comments.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Comments</a>
+    <a href="audio_video.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Audio & Video</a>  
+    <a href="layouts.html" style="display: block; padding: 10px 20px; color: white; text-decoration: none;">Layouts</a>
+  </div>
+
+  <div style="margin-top: 50px;margin-left: 180px; padding: 20px;">
+
+    <div id="tables" style="padding: 15px; background-color: #f9f9f9; border-radius: 10px;">
+      <h3 style="border-bottom: 2px solid #ccc; padding-bottom: 5px;">HTML Table Tags</h3>
+
+      <h4>1. &lt;table&gt;</h4>
+      <p>Defines the entire table structure.</p>
+      <table border="1" style="border-collapse: collapse;">
+        <tr><td>Table content</td></tr>
+      </table>
+
+      <h4>2. &lt;tr&gt;</h4>
+      <p>Defines a row inside the table.</p>
+      <table border="1" style="border-collapse: collapse;">
+        <tr><td>Row 1</td></tr>
+        <tr><td>Row 2</td></tr>
+      </table>
+
+      <h4>3. &lt;th&gt;</h4>
+      <p>Defines a header cell (bold & centered by default).</p>
+      <table border="1" style="border-collapse: collapse;">
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+        </tr>
+      </table>
+
+      <h4>4. &lt;td&gt;</h4>
+      <p>Defines a regular data cell.</p>
+      <table border="1" style="border-collapse: collapse;">
+        <tr>
+          <td>Data 1</td>
+          <td>Data 2</td>
+        </tr>
+      </table>
+
+      <h4>5. &lt;caption&gt;</h4>
+      <p>Provides a title or explanation for the table.</p>
+      <table border="1" style="border-collapse: collapse;">
+        <caption>Monthly Sales Report</caption>
+        <tr><td>January</td></tr>
+      </table>
+
+      <h4>6. &lt;thead&gt;</h4>
+      <p>Groups the header content of the table.</p>
+      <table border="1" style="border-collapse: collapse;">
+        <thead>
+          <tr><th>Head 1</th><th>Head 2</th></tr>
+        </thead>
+      </table>
+
+      <h4>7. &lt;tbody&gt;</h4>
+      <p>Groups the body content of the table.</p>
+      <table border="1" style="border-collapse: collapse;">
+        <tbody>
+          <tr><td>Body Cell 1</td><td>Body Cell 2</td></tr>
+        </tbody>
+      </table>
+
+      <h4>8. &lt;tfoot&gt;</h4>
+      <p>Groups the footer content of the table.</p>
+      <table border="1" style="border-collapse: collapse;">
+        <tfoot>
+          <tr><td colspan="2">Footer Info</td></tr>
+        </tfoot>
+      </table>
+
+      <h4>9. &lt;colgroup&gt; and &lt;col&gt;</h4>
+      <p>Defines a group of columns and applies styling.</p>
+      <table border="1" style="border-collapse: collapse;">
+        <colgroup>
+          <col style="background-color: #e0f7fa;">
+          <col style="background-color: #fce4ec;">
+        </colgroup>
+        <tr><td>Col 1</td><td>Col 2</td></tr>
+      </table>
+
+    </div>
+  </div>
+</body>
+</html>
